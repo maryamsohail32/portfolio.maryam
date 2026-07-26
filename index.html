@@ -11,9 +11,14 @@
         /* Identity kit: Deep Navy #1B3A5C, Charcoal #1A1A1A, Off-White #FAFAF8, Warm Amber #E8A33D */
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+        html { scroll-behavior: smooth; }
+        .browser-frame { background: #12283F; border-radius: 12px; overflow: hidden; }
+        .browser-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: #0D1B2A; }
+        .browser-dot { width: 9px; height: 9px; border-radius: 50%; }
     </style>
 </head>
 <body class="bg-[#FAFAF8] text-[#1A1A1A] min-h-screen font-sans antialiased">
+
     <!-- Header / Nav -->
     <header class="max-w-4xl mx-auto px-6 py-8 flex justify-between items-center">
         <span class="font-bold text-lg tracking-tight text-[#1B3A5C] uppercase">Maryam Sohail Ahmed.</span>
@@ -23,9 +28,11 @@
             <a href="#contact" class="text-[#E8A33D] hover:underline">Book a Call</a>
         </div>
     </header>
-    <!-- Hero Section -->
-    <main class="max-w-4xl mx-auto px-6 pt-12 pb-24 space-y-8">
-        <div class="space-y-4">
+
+    <main class="max-w-4xl mx-auto px-6">
+
+        <!-- ============ 1. HOME / HERO ============ -->
+        <div id="home" class="pt-12 pb-16 space-y-4">
             <span class="inline-flex items-center gap-2 px-3 py-1 bg-[#E8A33D]/10 text-[#1B3A5C] text-xs font-mono rounded-full border border-[#1B3A5C]/20">
                 <span class="h-2 w-2 rounded-full bg-[#E8A33D] animate-pulse"></span>
                 AI Engineering Portfolio
@@ -37,39 +44,111 @@
                 Specialized in building end-to-end machine learning systems. Built for Korangi, Landhi, and high-outage areas.
             </p>
         </div>
-        <!-- Featured Project Card -->
-        <div id="work" class="pt-8">
-            <h2 class="text-xs font-mono uppercase tracking-wider text-[#1A1A1A]/40 mb-6">Featured System</h2>
-            <div class="bg-white border border-[#1B3A5C]/10 rounded-2xl p-8 space-y-6 shadow-sm">
-                <div class="flex justify-between items-start">
-                    <div>
-                        <h3 class="text-2xl font-bold text-[#1B3A5C]">KarachiWatts</h3>
-                        <p class="text-[#1A1A1A]/60 text-sm mt-1">Predictive grid outage analysis and interactive assistant.</p>
-                    </div>
-                    <span class="px-3 py-1 bg-[#E8A33D]/10 text-[#E8A33D] text-xs font-mono rounded border border-[#E8A33D]/30">Live System</span>
-                </div>
 
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 py-4 border-y border-[#1B3A5C]/10 text-sm font-mono">
-                    <div>
-                        <span class="text-[#1A1A1A]/40 block text-xs">Metric (R²)</span>
-                        <span class="text-[#1B3A5C] text-lg font-bold">0.991</span>
+        <!-- ============ 2. WORK ============ -->
+        <div id="work" class="pt-4 pb-20">
+            <h2 class="text-xs font-mono uppercase tracking-wider text-[#1A1A1A]/40 mb-6">Featured System</h2>
+            <div class="bg-white border border-[#1B3A5C]/10 rounded-2xl shadow-sm overflow-hidden">
+                <div class="p-8 space-y-6">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold text-[#1B3A5C]">KarachiWatts</h3>
+                            <p class="text-[#1A1A1A]/60 text-sm mt-1">Predictive grid outage analysis and interactive assistant.</p>
+                        </div>
+                        <span class="px-3 py-1 bg-[#E8A33D]/10 text-[#E8A33D] text-xs font-mono rounded border border-[#E8A33D]/30">Live System</span>
                     </div>
-                    <div>
-                        <span class="text-[#1A1A1A]/40 block text-xs">Error (MAE)</span>
-                        <span class="text-[#1B3A5C] text-lg font-bold">0.26h</span>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 py-4 border-y border-[#1B3A5C]/10 text-sm font-mono">
+                        <div>
+                            <span class="text-[#1A1A1A]/40 block text-xs">Metric (R²)</span>
+                            <span class="text-[#1B3A5C] text-lg font-bold">0.991</span>
+                        </div>
+                        <div>
+                            <span class="text-[#1A1A1A]/40 block text-xs">Error (MAE)</span>
+                            <span class="text-[#1B3A5C] text-lg font-bold">0.26h</span>
+                        </div>
+                        <div>
+                            <span class="text-[#1A1A1A]/40 block text-xs">Scale</span>
+                            <span class="text-[#1B3A5C] text-lg font-bold">16.4k Records</span>
+                        </div>
                     </div>
-                    <div>
-                        <span class="text-[#1A1A1A]/40 block text-xs">Scale</span>
-                        <span class="text-[#1B3A5C] text-lg font-bold">16.4k Records</span>
+
+                    <p class="text-[#1A1A1A]/70 text-sm leading-relaxed">
+                        Someone told me they were tired of outages that hit with no warning. I built a Random Forest
+                        model on 16,440 records across 15 areas, then wrapped it in a chatbot that answers
+                        "bijli kab aayegi in Korangi?" in plain language — grounded in the model's real prediction,
+                        never guessing its own number.
+                    </p>
+
+                    <!-- Real screenshots from the KarachiWatts case study -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="browser-frame">
+                            <div class="browser-bar">
+                                <span class="browser-dot" style="background:#FF5F57"></span>
+                                <span class="browser-dot" style="background:#FEBC2E"></span>
+                                <span class="browser-dot" style="background:#28C840"></span>
+                                <span class="ml-2 text-[11px] text-white/40 font-mono">karachiwatts-msa.streamlit.app</span>
+                            </div>
+                            <img src="assets/karachiwatts-analytics.png" alt="KarachiWatts analytics dashboard" class="w-full">
+                        </div>
+                        <div class="browser-frame">
+                            <div class="browser-bar">
+                                <span class="browser-dot" style="background:#FF5F57"></span>
+                                <span class="browser-dot" style="background:#FEBC2E"></span>
+                                <span class="browser-dot" style="background:#28C840"></span>
+                                <span class="ml-2 text-[11px] text-white/40 font-mono">karachiwatts-msa.streamlit.app</span>
+                            </div>
+                            <img src="assets/karachiwatts-chatbot.png" alt="KarachiWatts bilingual chatbot" class="w-full">
+                        </div>
                     </div>
-                </div>
-                <div class="flex gap-4 pt-2">
-                    <a href="https://karachiwatts-msa.streamlit.app" target="_blank" class="px-4 py-2 bg-[#1B3A5C] hover:bg-[#12283F] text-white font-semibold text-sm rounded-lg transition inline-block">
-                        View Live App &rarr;
-                    </a>
+
+                    <div class="flex gap-4 pt-2">
+                        <a href="https://karachiwatts-msa.streamlit.app" target="_blank" class="px-4 py-2 bg-[#1B3A5C] hover:bg-[#12283F] text-white font-semibold text-sm rounded-lg transition inline-block">
+                            View Live App &rarr;
+                        </a>
+                    </div>
                 </div>
             </div>
+            <!-- Room for future project cards -->
         </div>
+
+        <!-- ============ 3. ABOUT ============ -->
+        <div id="about" class="pb-20">
+            <h2 class="text-xs font-mono uppercase tracking-wider text-[#1A1A1A]/40 mb-6">About</h2>
+            <div class="space-y-4 max-w-2xl">
+                <p class="text-[#1A1A1A]/80 text-lg leading-relaxed">
+                    I'm an AI/ML undergraduate at Dawood University of Engineering & Technology, Karachi — but the
+                    short version is: I don't trust a model until it's been tested outside a notebook, by a real
+                    person, on a real problem.
+                </p>
+                <p class="text-[#1A1A1A]/60 leading-relaxed">
+                    KarachiWatts started because someone was fed up with unpredictable power cuts, not because it
+                    made a good class project. That's the pattern I want every future build to follow — a real
+                    person, a real problem, an honest accuracy number, even when that number isn't perfect yet.
+                </p>
+                <p class="text-[#1A1A1A]/60 leading-relaxed">
+                    This page isn't about one project. It's proof of a way of working — future entries here may be
+                    in a completely different domain, and that's by design.
+                </p>
+            </div>
+        </div>
+
+        <!-- ============ 4. CONTACT ============ -->
+        <div id="contact" class="pb-24">
+            <div class="bg-[#1B3A5C] rounded-2xl px-8 py-12 text-center space-y-5">
+                <h2 class="text-2xl font-bold text-white">Have a real problem like this?</h2>
+                <p class="text-white/70 max-w-md mx-auto">Let's talk about building a version tailored to your business.</p>
+                <a href="mailto:hello@maryamsohail.dev" class="inline-block px-6 py-3 bg-[#E8A33D] hover:bg-[#E8A33D]/90 text-[#1B3A5C] font-semibold text-sm rounded-lg transition">
+                    Book a Call
+                </a>
+            </div>
+        </div>
+
     </main>
+
+    <footer class="max-w-4xl mx-auto px-6 pb-10 text-center text-xs text-[#1A1A1A]/30">
+        © 2026 Maryam Sohail Ahmed
+    </footer>
+
 </body>
 </html>
