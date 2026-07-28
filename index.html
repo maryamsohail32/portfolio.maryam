@@ -14,7 +14,7 @@
         html { scroll-behavior: smooth; }
         .browser-frame { background: #12283F; border-radius: 12px; overflow: hidden; }
         .browser-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: #0D1B2A; }
-        .browser-dot { width: 9px; height: 9px; border-radius: 50%; }
+        .browser-dot { width: 11px; height: 11px; border-radius: 50%; }
     </style>
 </head>
 <body class="bg-[#FAFAF8] text-[#1A1A1A] min-h-screen font-sans antialiased">
@@ -28,7 +28,7 @@
             <a href="https://www.linkedin.com/in/maryam-sohail-ahmed-685524341" target="_blank" rel="noopener" class="py-1 hover:text-[#1B3A5C] transition">LinkedIn</a>
             <a href="https://github.com/maryamsohail32" target="_blank" rel="noopener" class="py-1 hover:text-[#1B3A5C] transition">GitHub</a>
             <a href="assets/Maryam_Sohail_CV.pdf" target="_blank" class="py-1 hover:text-[#1B3A5C] transition">CV</a>
-            <a href="#contact" class="py-1 text-[#E8A33D] hover:underline font-medium">Book a Call</a>
+            <a href="#contact" class="py-1.5 px-3 bg-[#E8A33D] hover:bg-[#E8A33D]/90 text-[#1B3A5C] rounded-full font-semibold text-sm transition">Book a Call</a>
         </div>
     </header>
 
@@ -46,6 +46,13 @@
             <p class="text-[#1A1A1A]/70 text-lg sm:text-xl max-w-2xl leading-relaxed">
                 Specialized in building end-to-end machine learning systems. Built for Korangi, Landhi, and high-outage areas.
             </p>
+            <p class="text-[#1A1A1A]/70 text-base max-w-2xl leading-relaxed">
+                I build tools for small business owners in high-outage Karachi neighborhoods who need to plan around unpredictable power cuts — proven live below, not just described.
+            </p>
+            <div class="flex flex-wrap gap-3 pt-2">
+                <a href="#work" class="px-5 py-2.5 bg-[#1B3A5C] hover:bg-[#12283F] text-white font-medium text-sm rounded-lg transition">See all my work</a>
+                <a href="assets/Maryam_Sohail_CV.pdf" target="_blank" class="px-5 py-2.5 bg-white border border-[#1B3A5C]/20 hover:border-[#1B3A5C]/40 text-[#1B3A5C] font-medium text-sm rounded-lg transition">Download CV</a>
+            </div>
         </div>
 
         <!-- ============ 2. WORK ============ -->
@@ -92,7 +99,7 @@
                                 <span class="browser-dot" style="background:#28C840"></span>
                                 <span class="ml-2 text-[11px] text-white/60 font-mono">karachiwatts-msa.streamlit.app</span>
                             </div>
-                            <img src="assets/karachiWatts_analytics.jpeg" alt="KarachiWatts analytics dashboard" class="w-full" loading="lazy" decoding="async">
+                            <img src="assets/karachiwatts-analytics.jpg" alt="KarachiWatts analytics dashboard" class="w-full" loading="lazy" decoding="async">
                         </div>
                         <div class="browser-frame">
                             <div class="browser-bar">
@@ -101,7 +108,7 @@
                                 <span class="browser-dot" style="background:#28C840"></span>
                                 <span class="ml-2 text-[11px] text-white/60 font-mono">karachiwatts-msa.streamlit.app</span>
                             </div>
-                            <img src="assets/karachiWatts_chatbot.jpeg" alt="KarachiWatts bilingual chatbot" class="w-full" loading="lazy" decoding="async">
+                            <img src="assets/karachiwatts-chatbot.jpg" alt="KarachiWatts bilingual chatbot" class="w-full" loading="lazy" decoding="async">
                         </div>
                     </div>
 
@@ -112,7 +119,10 @@
                     </div>
                 </div>
             </div>
-            <!-- Room for future project cards -->
+            <!-- Placeholder signaling more work is coming, per reviewer feedback -->
+            <div class="mt-4 border-2 border-dashed border-[#1B3A5C]/15 rounded-2xl p-8 text-center">
+                <p class="text-[#1A1A1A]/50 text-sm font-mono uppercase tracking-wider">Next project — coming soon</p>
+            </div>
         </div>
 
         <!-- ============ 3. ABOUT ============ -->
