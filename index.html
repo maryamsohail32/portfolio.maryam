@@ -133,6 +133,102 @@
                     </div>
                 </div>
             </div>
+            <!-- ============ IMPACT PROJECT — insert this whole div between #work and #about ============ -->
+<div id="impact" class="pb-20">
+    <h2 class="text-xs font-mono uppercase tracking-wider text-[#1A1A1A]/70 mb-6">General AI Fluency — Impact Project</h2>
+    <div class="bg-white border border-[#1B3A5C]/10 rounded-2xl shadow-sm overflow-hidden">
+        <div class="p-8 space-y-6">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="text-2xl font-bold text-[#1B3A5C]">Deadline Triage Agent</h3>
+                    <p class="text-[#1A1A1A]/60 text-sm mt-1">A Claude Project that triages three parallel tracks from one manually-kept log.</p>
+                </div>
+                <span class="px-3 py-1 bg-[#E8A33D]/10 text-[#E8A33D] text-xs font-mono rounded border border-[#E8A33D]/30">In Daily Use</span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 py-4 border-y border-[#1B3A5C]/10 text-sm font-mono">
+                <div>
+                    <span class="text-[#1A1A1A]/70 block text-xs">Tracks triaged</span>
+                    <span class="text-[#1B3A5C] text-lg font-bold">3</span>
+                </div>
+                <div>
+                    <span class="text-[#1A1A1A]/70 block text-xs">Source of truth</span>
+                    <span class="text-[#1B3A5C] text-lg font-bold">1 log file</span>
+                </div>
+                <div>
+                    <span class="text-[#1A1A1A]/70 block text-xs">Agent edits log</span>
+                    <span class="text-[#1B3A5C] text-lg font-bold">Never</span>
+                </div>
+            </div>
+
+            <p class="text-[#1A1A1A]/70 text-sm leading-relaxed">
+                Three tracks running at once — the FlyRank ML internship, a hackathon, and job applications —
+                each with their own deadlines and states. The design choice that matters most isn't the agent,
+                it's the boundary around it: I keep a plain status log by hand after every real event, and the
+                agent reads it to triage and synthesize, but is instructed never to edit it. That rule is written
+                directly into the file itself, not just held in my head.
+            </p>
+
+            <!-- Real screenshot-style mock of the actual log + actual exchange, styled like the KarachiWatts browser frames above -->
+            <div class="browser-frame">
+                <div class="browser-bar">
+                    <span class="browser-dot" style="background:#FF5F57"></span>
+                    <span class="browser-dot" style="background:#FEBC2E"></span>
+                    <span class="browser-dot" style="background:#28C840"></span>
+                    <span class="ml-2 text-[11px] text-white/60 font-mono">status_log.txt</span>
+                </div>
+                <div class="p-5 font-mono text-[12px] leading-relaxed text-white/80">
+<span class="text-white/50">(Updated manually by Maryam after each real-world event. Agent reads this, never edits it.)</span>
+
+<span class="text-[#E8A33D]">=== FLYRANK ML INTERNSHIP ===</span>
+FL-05 Agent Concepts and MCP Basics — submitted
+FL-06 Design Your Personal Agent — submitted
+FL-07 Build the Agent — in progress (this one)
+
+<span class="text-[#E8A33D]">=== FLYRANK HACKATHON ===</span>
+Deliverable: working prototype + insights + recommendations
+Deadline: NOT YET LOGGED — need to check hackathon thread
+Status: not started
+
+<span class="text-[#E8A33D]">=== JOB / INTERNSHIP APPLICATIONS ===</span>
+Coderatory (MERN internship) — interviewed, awaiting response
+                </div>
+            </div>
+
+            <div class="browser-frame">
+                <div class="browser-bar">
+                    <span class="browser-dot" style="background:#FF5F57"></span>
+                    <span class="browser-dot" style="background:#FEBC2E"></span>
+                    <span class="browser-dot" style="background:#28C840"></span>
+                    <span class="ml-2 text-[11px] text-white/60 font-mono">Deadline Triage Agent</span>
+                </div>
+                <div class="p-5 space-y-3">
+                    <div class="inline-block bg-[#E8A33D]/20 text-white text-sm px-4 py-2 rounded-2xl rounded-bl-sm">
+                        What's open right now across all three tracks?
+                    </div>
+                    <div class="text-white/80 text-sm leading-relaxed">
+                        <span class="text-[#E8A33D] font-semibold">FlyRank ML Internship</span> — FL-07 Build the Agent, in progress<br>
+                        <span class="text-[#E8A33D] font-semibold">FlyRank Hackathon</span> — deliverable defined, deadline not yet logged, still needs checking<br>
+                        <span class="text-[#E8A33D] font-semibold">Job Applications</span> — Coderatory interviewed, awaiting response
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-[#1A1A1A]/60 text-xs leading-relaxed italic">
+                An agent that's allowed to edit its own source of truth can quietly drift from reality. Keeping the
+                log human-written means every status in it is something I actually did — the agent's job is
+                triage across three tracks at once, not record-keeping.
+            </p>
+
+            <div class="flex gap-4 pt-2">
+                <a href="https://claude.ai/share/2b4c08db-7902-491e-8c5e-33d46e752540" target="_blank" rel="noopener" class="px-4 py-2 bg-[#1B3A5C] hover:bg-[#12283F] text-white font-semibold text-sm rounded-lg transition inline-block">
+                    Try the agent &rarr;
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============ END IMPACT PROJECT ============ -->
             <!-- Placeholder signaling more work is coming, per reviewer feedback -->
             <div class="mt-4 border-2 border-dashed border-[#1B3A5C]/15 rounded-2xl p-8 text-center">
                 <p class="text-[#1A1A1A]/50 text-sm font-mono uppercase tracking-wider">Next project — coming soon</p>
