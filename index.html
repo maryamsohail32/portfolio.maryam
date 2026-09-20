@@ -1,325 +1,714 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maryam Sohail Ahmed | AI Engineer</title>
-    <meta name="description" content="Maryam Sohail Ahmed — AI/ML engineer who deploys machine learning as live, production systems. See KarachiWatts, a real load-shedding predictor for high-outage Karachi neighborhoods.">
-    <link rel="canonical" href="https://maryamsohailahmed.vercel.app/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.className += ' js';</script>
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Maryam Sohail Ahmed | AI Engineer">
-    <meta property="og:description" content="I don't leave machine learning in a notebook – I ship it. See KarachiWatts, a live outage predictor for Karachi's high-outage neighborhoods.">
-    <meta property="og:url" content="https://maryamsohailahmed.vercel.app/">
-    <meta property="og:image" content="https://maryamsohailahmed.vercel.app/assets/karachiWatts_analytics.jpeg">
+<title>Maryam Sohail Ahmed | Machine Learning Engineer</title>
+<meta name="description" content="Maryam Sohail Ahmed: BS AI student at DUET Karachi, former ML intern at FlyRank AI. I build and evaluate machine learning systems and report the results honestly. Open to ML / AI internships.">
+<meta name="theme-color" content="#1B3A5C">
+<link rel="canonical" href="https://maryamsohailahmed.vercel.app/">
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Maryam Sohail Ahmed | AI Engineer">
-    <meta name="twitter:description" content="I don't leave machine learning in a notebook – I ship it.">
-    <meta name="twitter:image" content="https://maryamsohailahmed.vercel.app/assets/karachiWatts_analytics.jpeg">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-<!-- Vercel Web Analytics (free tier) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Maryam Sohail Ahmed | Machine Learning Engineer">
+<meta property="og:description" content="I ship machine learning, and I report the numbers that hurt too. Open to ML / AI internships.">
+<meta property="og:url" content="https://maryamsohailahmed.vercel.app/">
+<meta property="og:image" content="https://maryamsohailahmed.vercel.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Maryam Sohail Ahmed | Machine Learning Engineer">
+<meta name="twitter:description" content="I ship machine learning, and I report the numbers that hurt too.">
+<meta name="twitter:image" content="https://maryamsohailahmed.vercel.app/assets/og-image.png">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <script defer src="/_vercel/insights/script.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-        /* Identity kit: Deep Navy #1B3A5C, Charcoal #1A1A1A, Off-White #FAFAF8, Warm Amber #E8A33D */
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
-        html { scroll-behavior: smooth; }
-        .browser-frame { background: #12283F; border-radius: 12px; overflow: hidden; }
-        .browser-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: #0D1B2A; }
-        .browser-dot { width: 11px; height: 11px; border-radius: 50%; }
-    </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Maryam Sohail Ahmed",
+  "jobTitle": "Machine Learning Engineer (student)",
+  "url": "https://maryamsohailahmed.vercel.app/",
+  "email": "mailto:maryam786sohail@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Karachi", "addressCountry": "PK" },
+  "alumniOf": "Dawood University of Engineering and Technology",
+  "sameAs": [
+    "https://github.com/maryamsohail32",
+    "https://www.linkedin.com/in/maryam-sohail-ahmed-685524341",
+    "https://papers.ssrn.com/abstract=7453339"
+  ]
+}
+</script>
+
+<style>
+:root{
+  --navy:#1B3A5C; --navy-2:#12293f; --navy-3:#0d2033;
+  --amber:#E8A33D; --amber-ink:#8a5a0f;
+  --paper:#FAFAF8; --ink:#1A1A1A; --muted:#55606d; --line:#e4e2da;
+  --steel:#5B7FA6; --gray:#9AA0A6;
+  --max:1120px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;color-scheme:light}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Space Grotesk',Inter,system-ui,sans-serif;color:var(--navy);line-height:1.15;margin:0}
+p{margin:0}
+a{color:inherit}
+img{max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--navy);color:#fff;padding:8px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
+
+/* ---------- header ---------- */
+.site{position:sticky;top:0;z-index:50;background:rgba(250,250,248,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.site .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 17px 'Space Grotesk',sans-serif;color:var(--navy)}
+.brand i{display:grid;place-items:center;width:32px;height:32px;border-radius:8px;background:var(--navy);color:var(--amber);font-style:normal;font-size:12px;letter-spacing:.04em}
+.nav{display:flex;align-items:center;gap:26px;font-size:14px;color:var(--muted)}
+.nav a{text-decoration:none;padding:6px 0}
+.nav a:hover{color:var(--navy)}
+.nav .pill{background:var(--navy);color:#fff;padding:9px 16px;border-radius:999px;font-weight:600}
+.nav .pill:hover{background:var(--navy-2);color:#fff}
+
+/* ---------- buttons / tags ---------- */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;font:600 14px Inter,sans-serif;text-decoration:none;border:1px solid transparent;transition:transform .15s,background .15s,border-color .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--navy);color:#fff}
+.btn-primary:hover{background:var(--navy-2)}
+.btn-amber{background:var(--amber);color:var(--navy-2)}
+.btn-ghost{background:#fff;color:var(--navy);border-color:#cfd5dc}
+.btn-ghost:hover{border-color:var(--navy)}
+.btn-sm{padding:9px 14px;font-size:13px}
+.tag{display:inline-block;padding:4px 9px;border-radius:5px;font:700 11px/1.2 'Space Grotesk',sans-serif;letter-spacing:.09em;text-transform:uppercase}
+.tag-observed{background:var(--navy);color:#fff}
+.tag-directional{background:var(--amber);color:var(--navy-2)}
+.tag-decision{background:var(--steel);color:#fff}
+.tag-not{background:var(--gray);color:var(--navy-2)}
+
+/* ---------- hero ---------- */
+.hero{padding:64px 0 56px;background-image:radial-gradient(rgba(27,58,92,.09) 1px,transparent 1px);background-size:24px 24px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:7px 14px;border:1px solid rgba(27,58,92,.18);background:#fff;border-radius:999px;font-size:13px;font-weight:500;color:var(--navy)}
+.eyebrow b{width:8px;height:8px;border-radius:50%;background:var(--amber);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+.hero h1{font-size:clamp(34px,5vw,56px);letter-spacing:-.02em;margin:22px 0 18px}
+.hero h1 em{font-style:normal;color:var(--amber-ink)}
+.lead{font-size:18px;color:var(--muted);max-width:34em}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero-art{background:linear-gradient(135deg,#12293f,#1B3A5C);border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(18,41,63,.55);position:relative}
+.hero-art::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(232,163,61,.14) 1px,transparent 1px);background-size:24px 24px}
+.scene{display:block;width:100%;height:auto;position:relative}
+.sc-roc{stroke-dasharray:1;stroke-dashoffset:0;animation:draw 7s ease-in-out infinite}
+@keyframes draw{0%{stroke-dashoffset:1}50%,100%{stroke-dashoffset:0}}
+.sc-steam{opacity:0;animation:rise 3.2s ease-in-out infinite}
+.sc-s2{animation-delay:.8s}.sc-s3{animation-delay:1.6s}
+@keyframes rise{0%{transform:translateY(6px);opacity:0}30%{opacity:.55}100%{transform:translateY(-14px);opacity:0}}
+.sc-tw{animation:tw 3.4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.9}}
+
+/* ---------- proof strip ---------- */
+.proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+.proof .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.proof-item{padding:26px 24px;border-left:1px solid var(--line)}
+.proof-item:first-child{border-left:0;padding-left:0}
+.proof-item b{display:block;font:700 26px 'Space Grotesk',sans-serif;color:var(--navy);letter-spacing:-.01em}
+.proof-item span{display:block;font-size:13.5px;color:var(--muted);margin-top:2px;line-height:1.4}
+
+/* ---------- sections ---------- */
+.section{padding:84px 0}
+.band{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.kicker{font:600 12px/1 'Space Grotesk',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--amber-ink)}
+.section h2{font-size:clamp(26px,3.4vw,38px);letter-spacing:-.015em;margin-top:12px}
+.sub{color:var(--muted);max-width:42em;margin-top:12px}
+.legend{display:flex;flex-wrap:wrap;gap:10px 16px;margin:20px 0 40px;align-items:center;font-size:13px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+
+/* ---------- case studies ---------- */
+.case{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:32px;margin-bottom:28px;box-shadow:0 1px 2px rgba(18,41,63,.04),0 16px 36px -22px rgba(18,41,63,.3)}
+.case h3{font-size:25px;margin:12px 0 12px;letter-spacing:-.01em}
+.case-txt>p{color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0}
+.metric{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:13px 14px}
+.metric b{display:block;font:700 26px/1.1 'Space Grotesk',sans-serif;color:var(--navy)}
+.metric span{display:block;font-size:12.5px;color:var(--muted);line-height:1.35;margin-top:5px}
+.claim{font-size:14px;border-left:3px solid var(--amber);padding:2px 0 2px 12px;margin:0 0 20px}
+.claim strong{color:var(--navy)}
+.links{display:flex;flex-wrap:wrap;gap:10px}
+
+.viz{background:var(--navy-2);border-radius:14px;padding:24px;color:#fff;align-self:stretch}
+.viz-title{font:600 13px 'Space Grotesk',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:18px}
+.barlabel{font-size:13px;color:#b9c8d8;margin:16px 0 4px}
+.barrow{display:grid;grid-template-columns:92px 1fr 46px;gap:10px;align-items:center;font-size:13px;margin:8px 0}
+.barrow em{font-style:normal;font-weight:600;text-align:right}
+.track{background:rgba(255,255,255,.1);height:12px;border-radius:99px;overflow:hidden}
+.track i{display:block;height:100%;width:var(--w);border-radius:99px}
+.b-a{background:#9FB6CE}.b-b{background:var(--amber)}
+.js .reveal .track i{width:0;transition:width 1.1s cubic-bezier(.2,.8,.2,1)}
+.js .reveal.in .track i{width:var(--w)}
+.viz-note{font-size:12.5px;color:#9fb6ce;margin-top:20px;line-height:1.5}
+.ladder ol{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.ladder li{display:grid;grid-template-columns:118px 1fr;gap:12px;align-items:start;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,.1);font-size:13.5px;color:#c9d6e3}
+.ladder li.on{border-color:var(--amber);background:rgba(232,163,61,.1);color:#fff}
+.ladder .tag-observed{background:#2c5079}
+.ladder li b{color:var(--amber)}
+
+.shots{display:grid;gap:14px;align-content:start}
+.frame{margin:0;background:var(--navy-3);border-radius:12px;overflow:hidden;border:1px solid rgba(27,58,92,.25)}
+.frame-bar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:#0a1826}
+.frame-bar i{width:10px;height:10px;border-radius:50%;background:#FF5F57}
+.frame-bar i:nth-child(2){background:#FEBC2E}.frame-bar i:nth-child(3){background:#28C840}
+.frame-bar span{margin-left:8px;font:11px ui-monospace,Menlo,Consolas,monospace;color:rgba(255,255,255,.6)}
+.frame img{display:block;width:100%;height:auto}
+
+.more-title{font-size:20px;margin:44px 0 18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-3px);border-color:#c9d1da;box-shadow:0 18px 30px -22px rgba(18,41,63,.5)}
+.card h4{font-size:18px;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted);flex:1}
+.stack{font:12px ui-monospace,Menlo,Consolas,monospace;color:var(--steel);margin:14px 0}
+.card .links{margin-top:auto}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.card.has-thumb{padding:0;overflow:hidden}
+.thumb{display:block;aspect-ratio:16/9;background:#0a1220;overflow:hidden;border-bottom:1px solid var(--line)}
+.thumb img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .4s}
+.thumb.contain img{object-fit:contain;object-position:center}
+.card:hover .thumb img{transform:scale(1.03)}
+.card .body{padding:22px;display:flex;flex-direction:column;flex:1}
+
+/* ---------- how I work ---------- */
+.two{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;margin-top:36px;align-items:start}
+.paper{background:var(--navy);color:#fff;border-radius:20px;padding:34px}
+.paper .kicker{color:var(--amber)}
+.paper h3{color:#fff;font-size:24px;margin:14px 0 14px}
+.paper p{color:#c9d6e3;margin-bottom:22px}
+.mistakes{display:grid;gap:14px}
+.mistake{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.mistake h4{font-size:16px;margin-bottom:6px}
+.mistake p{font-size:14px;color:var(--muted)}
+
+/* ---------- experience ---------- */
+.cols{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;margin-top:36px}
+.col-title{font:600 12px/1 'Space Grotesk',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.tl{padding:20px 0;border-bottom:1px solid var(--line)}
+.tl:last-child{border-bottom:0}
+.tl h4{font-size:18px}
+.tl .meta{font-size:13px;color:var(--amber-ink);font-weight:600;margin:3px 0 8px}
+.tl p,.tl li{font-size:14.5px;color:var(--muted)}
+.tl ul{margin:0;padding-left:18px;display:grid;gap:4px}
+
+/* ---------- skills ---------- */
+.skills{margin-top:32px;display:grid;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.skill-row{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:20px 24px;border-top:1px solid var(--line);align-items:start}
+.skill-row:first-child{border-top:0}
+.skill-row h4{font-size:15px}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pills span{padding:5px 12px;border-radius:8px;background:var(--paper);border:1px solid var(--line);font-size:13.5px;color:var(--ink)}
+.note{font-size:13.5px;color:var(--muted);margin-top:14px}
+
+/* ---------- contact ---------- */
+.contact{background:var(--navy);border-radius:26px;padding:52px;display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;color:#fff}
+.contact h2{color:#fff;margin:12px 0 14px}
+.contact .kicker{color:var(--amber)}
+.contact p{color:#c9d6e3}
+.contact-list{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.contact-list a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+.contact-list a:hover{border-color:var(--amber)}
+.contact-list small{display:block;color:#9fb6ce;font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1px}
+form{display:grid;gap:12px}
+label{font-size:12.5px;color:#c9d6e3;display:block;margin-bottom:5px}
+input,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid transparent;background:#fff;font:15px Inter,sans-serif;color:var(--ink)}
+input:focus,textarea:focus{outline:3px solid var(--amber);outline-offset:1px}
+textarea{min-height:120px;resize:vertical}
+.hp{position:absolute;left:-9999px}
+.form-status{font-size:14px;min-height:20px}
+.form-status.ok{color:#8fe3b0}.form-status.err{color:#ffc4a8}
+button.btn{cursor:pointer}
+button.btn:disabled{opacity:.6;cursor:wait}
+
+footer{padding:34px 0 46px;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
+footer a{text-decoration:none}
+footer a:hover{color:var(--navy)}
+
+/* ---------- reveal ---------- */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .hero .wrap,.case,.two,.cols,.contact{grid-template-columns:1fr}
+  .hero .wrap{gap:36px}
+  .grid3{grid-template-columns:1fr 1fr}
+  .proof .wrap{grid-template-columns:1fr 1fr}
+  .proof-item:nth-child(3){border-left:0;padding-left:0}
+  .proof-item:nth-child(n+3){border-top:1px solid var(--line)}
+  .contact{padding:36px 26px}
+}
+@media (max-width:640px){
+  .nav a:not(.pill){display:none}
+  .section{padding:64px 0}
+  .case{padding:22px}
+  .metrics{grid-template-columns:1fr}
+  .grid3,.grid2{grid-template-columns:1fr}
+  .skill-row{grid-template-columns:1fr;gap:10px}
+  .ladder li{grid-template-columns:1fr}
+  .barrow{grid-template-columns:82px 1fr 44px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none}
+  .js .reveal .track i{width:var(--w)}
+}
+</style>
 </head>
-<body class="bg-[#FAFAF8] text-[#1A1A1A] min-h-screen font-sans antialiased">
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-    <!-- Header / Nav -->
-    <header class="max-w-4xl mx-auto px-6 py-6 sm:py-8 flex flex-wrap gap-y-3 justify-between items-center">
-        <span class="font-bold text-lg tracking-tight text-[#1B3A5C] uppercase">Maryam S. Ahmed.</span>
-        <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-[#1A1A1A]/70 items-center">
-            <a href="#work" class="py-1 hover:text-[#1B3A5C] transition">Work</a>
-            <a href="#about" class="py-1 hover:text-[#1B3A5C] transition">About</a>
-            <a href="https://www.linkedin.com/in/maryam-sohail-ahmed-685524341" target="_blank" rel="noopener" class="py-1 hover:text-[#1B3A5C] transition">LinkedIn</a>
-            <a href="https://github.com/maryamsohail32" target="_blank" rel="noopener" class="py-1 hover:text-[#1B3A5C] transition">GitHub</a>
-            <a href="assets/Maryam-Sohail-CV.pdf" target="_blank" rel="noopener" class="py-1 hover:text-[#1B3A5C] transition">CV</a>
-            <a href="#contact" class="py-1.5 px-3 bg-[#E8A33D] hover:bg-[#E8A33D]/90 text-[#1B3A5C] rounded-full font-semibold text-sm transition">Book a Call</a>
-        </div>
-    </header>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top"><i>MS</i>Maryam Sohail</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#how">How I work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="pill" href="assets/Maryam-Sohail-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+    </nav>
+  </div>
+</header>
 
-    <main class="max-w-4xl mx-auto px-6">
+<main id="main">
 
-        <!-- ============ 1. HOME / HERO ============ -->
-        <div id="home" class="pt-12 pb-16 space-y-4">
-            <span class="inline-flex items-center gap-2 px-3 py-1 bg-[#E8A33D]/10 text-[#1B3A5C] text-xs font-mono rounded-full border border-[#1B3A5C]/20">
-                <span class="h-2 w-2 rounded-full bg-[#E8A33D] animate-pulse"></span>
-                AI Engineering Portfolio
-            </span>
-            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-[#1B3A5C] leading-tight">
-                I don't leave machine learning in a notebook – I ship it.
-            </h1>
-            <p class="text-[#1A1A1A]/70 text-lg sm:text-xl max-w-2xl leading-relaxed">
-                Specialized in building end-to-end machine learning systems. Built for Korangi, Landhi, and high-outage areas.
-            </p>
-            <p class="text-[#1A1A1A]/70 text-base max-w-2xl leading-relaxed">
-                I build tools for small business owners in high-outage Karachi neighborhoods who need to plan around unpredictable power cuts — proven live below, not just described.
-            </p>
-            <div class="flex flex-wrap gap-3 pt-2">
-                <a href="#work" class="px-5 py-2.5 bg-[#1B3A5C] hover:bg-[#12283F] text-white font-medium text-sm rounded-lg transition">See all my work</a>
-                <a href="assets/Maryam-Sohail-CV.pdf" target="_blank" rel="noopener" class="px-5 py-2.5 bg-white border border-[#1B3A5C]/20 hover:border-[#1B3A5C]/40 text-[#1B3A5C] font-medium text-sm rounded-lg transition">Download CV</a>
-            </div>
-        </div>
-
-        <!-- ============ 2. WORK ============ -->
-        <div id="work" class="pt-4 pb-20">
-            <h2 class="text-xs font-mono uppercase tracking-wider text-[#1A1A1A]/70 mb-6">Featured System</h2>
-            <div class="bg-white border border-[#1B3A5C]/10 rounded-2xl shadow-sm overflow-hidden">
-                <div class="p-8 space-y-6">
-                    <div class="flex justify-between items-start">
-                        <div>
-                            <h3 class="text-2xl font-bold text-[#1B3A5C]">KarachiWatts</h3>
-                            <p class="text-[#1A1A1A]/60 text-sm mt-1">Predictive grid outage analysis and interactive assistant.</p>
-                        </div>
-                        <span class="px-3 py-1 bg-[#E8A33D]/10 text-[#E8A33D] text-xs font-mono rounded border border-[#E8A33D]/30">Live System</span>
-                    </div>
-
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 py-4 border-y border-[#1B3A5C]/10 text-sm font-mono">
-                        <div>
-                            <span class="text-[#1A1A1A]/70 block text-xs">Metric (R²)</span>
-                            <span class="text-[#1B3A5C] text-lg font-bold">0.991</span>
-                        </div>
-                        <div>
-                            <span class="text-[#1A1A1A]/70 block text-xs">Error (MAE)</span>
-                            <span class="text-[#1B3A5C] text-lg font-bold">0.26h</span>
-                        </div>
-                        <div>
-                            <span class="text-[#1A1A1A]/70 block text-xs">Scale</span>
-                            <span class="text-[#1B3A5C] text-lg font-bold">16.4k Records</span>
-                        </div>
-                    </div>
-
-                    <p class="text-[#1A1A1A]/70 text-sm leading-relaxed">
-                        Someone told me they were tired of outages that hit with no warning. I built a Random Forest
-                        model on 16,440 records across 15 areas, then wrapped it in a chatbot that answers
-                        "bijli kab aayegi in Korangi?" in plain language — grounded in the model's real prediction,
-                        never guessing its own number.
-                    </p>
-
-                    <!-- Real screenshots from the KarachiWatts case study -->
-                    <div class="grid sm:grid-cols-2 gap-4">
-                        <div class="browser-frame">
-                            <div class="browser-bar">
-                                <span class="browser-dot" style="background:#FF5F57"></span>
-                                <span class="browser-dot" style="background:#FEBC2E"></span>
-                                <span class="browser-dot" style="background:#28C840"></span>
-                                <span class="ml-2 text-[11px] text-white/60 font-mono">karachiwatts-msa.streamlit.app</span>
-                            </div>
-                            <img src="assets/karachiWatts_analytics.jpeg" alt="KarachiWatts analytics dashboard" class="w-full" loading="lazy" decoding="async">
-                        </div>
-                        <div class="browser-frame">
-                            <div class="browser-bar">
-                                <span class="browser-dot" style="background:#FF5F57"></span>
-                                <span class="browser-dot" style="background:#FEBC2E"></span>
-                                <span class="browser-dot" style="background:#28C840"></span>
-                                <span class="ml-2 text-[11px] text-white/60 font-mono">karachiwatts-msa.streamlit.app</span>
-                            </div>
-                            <img src="assets/karachiWatts_chatbot.jpeg" alt="KarachiWatts bilingual chatbot" class="w-full" loading="lazy" decoding="async">
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4 pt-2">
-                        <a href="https://karachiwatts-msa.streamlit.app" target="_blank" rel="noopener" class="px-4 py-2 bg-[#1B3A5C] hover:bg-[#12283F] text-white font-semibold text-sm rounded-lg transition inline-block">
-                            View Live App &rarr;
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- ============ IMPACT PROJECT — insert this whole div between #work and #about ============ -->
-<div id="impact" class="pb-20">
-    <h2 class="text-xs font-mono uppercase tracking-wider text-[#1A1A1A]/70 mb-6">General AI Fluency — Impact Project</h2>
-    <div class="bg-white border border-[#1B3A5C]/10 rounded-2xl shadow-sm overflow-hidden">
-        <div class="p-8 space-y-6">
-            <div class="flex justify-between items-start">
-                <div>
-                    <h3 class="text-2xl font-bold text-[#1B3A5C]">Deadline Triage Agent</h3>
-                    <p class="text-[#1A1A1A]/60 text-sm mt-1">A Claude Project that triages three parallel tracks from one manually-kept log.</p>
-                </div>
-                <span class="px-3 py-1 bg-[#E8A33D]/10 text-[#E8A33D] text-xs font-mono rounded border border-[#E8A33D]/30">In Daily Use</span>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 py-4 border-y border-[#1B3A5C]/10 text-sm font-mono">
-                <div>
-                    <span class="text-[#1A1A1A]/70 block text-xs">Tracks triaged</span>
-                    <span class="text-[#1B3A5C] text-lg font-bold">3</span>
-                </div>
-                <div>
-                    <span class="text-[#1A1A1A]/70 block text-xs">Source of truth</span>
-                    <span class="text-[#1B3A5C] text-lg font-bold">1 log file</span>
-                </div>
-                <div>
-                    <span class="text-[#1A1A1A]/70 block text-xs">Agent edits log</span>
-                    <span class="text-[#1B3A5C] text-lg font-bold">Never</span>
-                </div>
-            </div>
-
-            <p class="text-[#1A1A1A]/70 text-sm leading-relaxed">
-                Three tracks running at once — the FlyRank ML internship, a hackathon, and job applications —
-                each with their own deadlines and states. The design choice that matters most isn't the agent,
-                it's the boundary around it: I keep a plain status log by hand after every real event, and the
-                agent reads it to triage and synthesize, but is instructed never to edit it. That rule is written
-                directly into the file itself, not just held in my head.
-            </p>
-
-            <!-- Real screenshot-style mock of the actual log + actual exchange, styled like the KarachiWatts browser frames above -->
-            <div class="browser-frame">
-                <div class="browser-bar">
-                    <span class="browser-dot" style="background:#FF5F57"></span>
-                    <span class="browser-dot" style="background:#FEBC2E"></span>
-                    <span class="browser-dot" style="background:#28C840"></span>
-                    <span class="ml-2 text-[11px] text-white/60 font-mono">status_log.txt</span>
-                </div>
-                <div class="p-5 font-mono text-[12px] leading-relaxed text-white/80">
-<span class="text-white/50">(Updated manually by Maryam after each real-world event. Agent reads this, never edits it.)</span>
-
-<span class="text-[#E8A33D]">=== FLYRANK ML INTERNSHIP ===</span>
-FL-05 Agent Concepts and MCP Basics — submitted
-FL-06 Design Your Personal Agent — submitted
-FL-07 Build the Agent — in progress (this one)
-
-<span class="text-[#E8A33D]">=== FLYRANK HACKATHON ===</span>
-Deliverable: working prototype + insights + recommendations
-Deadline: NOT YET LOGGED — need to check hackathon thread
-Status: not started
-
-<span class="text-[#E8A33D]">=== JOB / INTERNSHIP APPLICATIONS ===</span>
-Coderatory (MERN internship) — interviewed, awaiting response
-                </div>
-            </div>
-
-            <div class="browser-frame">
-                <div class="browser-bar">
-                    <span class="browser-dot" style="background:#FF5F57"></span>
-                    <span class="browser-dot" style="background:#FEBC2E"></span>
-                    <span class="browser-dot" style="background:#28C840"></span>
-                    <span class="ml-2 text-[11px] text-white/60 font-mono">Deadline Triage Agent</span>
-                </div>
-                <div class="p-5 space-y-3">
-                    <div class="inline-block bg-[#E8A33D]/20 text-white text-sm px-4 py-2 rounded-2xl rounded-bl-sm">
-                        What's open right now across all three tracks?
-                    </div>
-                    <div class="text-white/80 text-sm leading-relaxed">
-                        <span class="text-[#E8A33D] font-semibold">FlyRank ML Internship</span> — FL-07 Build the Agent, in progress<br>
-                        <span class="text-[#E8A33D] font-semibold">FlyRank Hackathon</span> — deliverable defined, deadline not yet logged, still needs checking<br>
-                        <span class="text-[#E8A33D] font-semibold">Job Applications</span> — Coderatory interviewed, awaiting response
-                    </div>
-                </div>
-            </div>
-
-            <p class="text-[#1A1A1A]/60 text-xs leading-relaxed italic">
-                An agent that's allowed to edit its own source of truth can quietly drift from reality. Keeping the
-                log human-written means every status in it is something I actually did — the agent's job is
-                triage across three tracks at once, not record-keeping.
-            </p>
-
-            <div class="flex gap-4 pt-2">
-                <a href="https://claude.ai/share/2b4c08db-7902-491e-8c5e-33d46e752540" target="_blank" rel="noopener" class="px-4 py-2 bg-[#1B3A5C] hover:bg-[#12283F] text-white font-semibold text-sm rounded-lg transition inline-block">
-                    Try the agent &rarr;
-                </a>
-            </div>
-        </div>
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><b></b>Open to ML / AI internships</span>
+      <h1>I ship machine learning, and I report <em>the numbers that hurt</em> too.</h1>
+      <p class="lead">BS Artificial Intelligence student at DUET, Karachi. Former Machine Learning intern at FlyRank AI. Author of an SSRN preprint on why accuracy alone picks the wrong medical-imaging model.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#work">See my work</a>
+        <a class="btn btn-ghost" href="assets/Maryam-Sohail-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a class="btn btn-ghost" href="mailto:maryam786sohail@gmail.com">Email me</a>
+      </div>
     </div>
-</div>
-<!-- ============ END IMPACT PROJECT ============ -->
-            <!-- Placeholder signaling more work is coming, per reviewer feedback -->
-            <div class="mt-4 border-2 border-dashed border-[#1B3A5C]/15 rounded-2xl p-8 text-center">
-                <p class="text-[#1A1A1A]/50 text-sm font-mono uppercase tracking-wider">Next project — coming soon</p>
-            </div>
+
+    <div class="hero-art">
+      <svg class="scene" viewBox="600 20 600 300" role="img" aria-label="Illustration of a desk with a monitor showing an ROC curve with AUC 0.838, a window with a night skyline, and a cup of chai">
+        <defs>
+          <radialGradient id="scGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#E8A33D" stop-opacity=".22"/><stop offset="1" stop-color="#E8A33D" stop-opacity="0"/></radialGradient>
+          <clipPath id="scWin"><rect x="1010" y="30" width="150" height="120" rx="6"/></clipPath>
+        </defs>
+        <ellipse cx="840" cy="175" rx="330" ry="170" fill="url(#scGlow)"/>
+        <circle class="sc-tw" cx="640" cy="46" r="2" fill="#E8A33D"/>
+        <circle class="sc-tw" cx="720" cy="32" r="1.8" fill="#FAFAF8" style="animation-delay:1s"/>
+        <circle class="sc-tw" cx="960" cy="44" r="1.8" fill="#E8A33D" style="animation-delay:2s"/>
+        <circle class="sc-tw" cx="1182" cy="190" r="1.8" fill="#E8A33D" style="animation-delay:1.5s"/>
+
+        <g clip-path="url(#scWin)">
+          <rect x="1010" y="30" width="150" height="120" fill="#0a1a2a"/>
+          <circle cx="1130" cy="62" r="12" fill="#F2E6D0"/><circle cx="1136" cy="58" r="11" fill="#0a1a2a"/>
+          <rect x="1020" y="110" width="22" height="40" fill="#12293f"/>
+          <rect x="1046" y="92" width="18" height="58" fill="#163049"/>
+          <path d="M1070 150 v-28 a18 18 0 0 1 36 0 v28 z" fill="#12293f"/>
+          <rect x="1086" y="98" width="3" height="8" fill="#12293f"/>
+          <rect x="1112" y="100" width="5" height="50" fill="#163049"/>
+          <circle cx="1114.5" cy="97" r="3.5" fill="#163049"/>
+          <rect x="1122" y="116" width="26" height="34" fill="#12293f"/>
+          <rect x="1026" y="118" width="4" height="5" fill="#E8A33D" opacity=".85"/>
+          <rect x="1034" y="128" width="4" height="5" fill="#E8A33D" opacity=".6"/>
+          <rect x="1052" y="102" width="4" height="5" fill="#E8A33D" opacity=".8"/>
+          <rect x="1052" y="118" width="4" height="5" fill="#E8A33D" opacity=".5"/>
+          <rect x="1130" y="124" width="4" height="5" fill="#E8A33D" opacity=".85"/>
+          <rect x="1138" y="136" width="4" height="5" fill="#E8A33D" opacity=".6"/>
+        </g>
+        <rect x="1010" y="30" width="150" height="120" rx="6" fill="none" stroke="#E8A33D" stroke-width="3"/>
+        <rect x="1004" y="148" width="162" height="6" rx="3" fill="#E8A33D"/>
+
+        <rect x="600" y="270" width="600" height="50" fill="#0d2033"/>
+        <line x1="600" y1="270" x2="1200" y2="270" stroke="#E8A33D" stroke-width="2" opacity=".6"/>
+
+        <ellipse cx="627" cy="236" rx="6" ry="15" fill="#4E8C7A"/>
+        <ellipse cx="616" cy="242" rx="5" ry="11" fill="#5FA08C" transform="rotate(-30 616 242)"/>
+        <ellipse cx="639" cy="242" rx="5" ry="11" fill="#5FA08C" transform="rotate(30 639 242)"/>
+        <rect x="614" y="252" width="26" height="18" rx="3" fill="#E8A33D"/>
+
+        <rect x="825" y="255" width="30" height="12" fill="#0d2033"/>
+        <rect x="800" y="265" width="80" height="6" rx="3" fill="#23445f"/>
+        <rect x="680" y="80" width="320" height="175" rx="10" fill="#0d2033" stroke="#E8A33D" stroke-width="3"/>
+        <rect x="692" y="92" width="296" height="151" rx="4" fill="#0a1a2a"/>
+
+        <circle cx="704" cy="101" r="2.5" fill="#E8A33D"/><circle cx="713" cy="101" r="2.5" fill="#9AA0A6"/><circle cx="722" cy="101" r="2.5" fill="#9AA0A6"/>
+        <text x="738" y="104" font-size="10" fill="#9FB6CE" font-family="Inter,system-ui,sans-serif">ROC · RSNA real data</text>
+        <g stroke="#5B7FA6" stroke-width="1" opacity=".35">
+          <line x1="714" y1="175" x2="962" y2="175"/><line x1="714" y1="126" x2="962" y2="126"/>
+          <line x1="776" y1="126" x2="776" y2="224"/><line x1="838" y1="126" x2="838" y2="224"/><line x1="900" y1="126" x2="900" y2="224"/>
+        </g>
+        <line x1="714" y1="126" x2="714" y2="224" stroke="#5B7FA6" stroke-width="1.5"/>
+        <line x1="714" y1="224" x2="962" y2="224" stroke="#5B7FA6" stroke-width="1.5"/>
+        <line x1="714" y1="224" x2="962" y2="126" stroke="#9AA0A6" stroke-width="1.5" stroke-dasharray="4 4"/>
+        <path d="M714 224 C 726 168, 768 140, 830 133 S 940 127, 962 126 L 962 224 Z" fill="#E8A33D" opacity=".12"/>
+        <path class="sc-roc" pathLength="1" d="M714 224 C 726 168, 768 140, 830 133 S 940 127, 962 126" fill="none" stroke="#E8A33D" stroke-width="3" stroke-linecap="round"/>
+        <text x="905" y="203" font-size="18" font-weight="700" fill="#E8A33D" text-anchor="middle" font-family="'Space Grotesk',Inter,sans-serif">AUC 0.838</text>
+        <text x="905" y="216" font-size="9" fill="#9FB6CE" text-anchor="middle" font-family="Inter,system-ui,sans-serif">MobileNetV2</text>
+        <text x="714" y="238" font-size="9" fill="#9AA0A6" font-family="Inter,system-ui,sans-serif">NOT CLAIMED: clinical use</text>
+
+        <rect x="895" y="262" width="112" height="8" rx="3" fill="#23445f"/>
+
+        <path d="M1032 238 L1068 238 L1064 268 Q1050 274 1036 268 Z" fill="#F2E6D0"/>
+        <ellipse cx="1050" cy="238" rx="18" ry="5" fill="#B5773E"/>
+        <path d="M1068 244 q14 4 -3 20" fill="none" stroke="#F2E6D0" stroke-width="4" stroke-linecap="round"/>
+        <path class="sc-steam" d="M1044 230 q-5 -8 0 -14 q5 -6 0 -12" fill="none" stroke="#FAFAF8" stroke-width="2" stroke-linecap="round"/>
+        <path class="sc-steam sc-s2" d="M1051 230 q-5 -8 0 -14 q5 -6 0 -12" fill="none" stroke="#FAFAF8" stroke-width="2" stroke-linecap="round"/>
+        <path class="sc-steam sc-s3" d="M1058 230 q-5 -8 0 -14 q5 -6 0 -12" fill="none" stroke="#FAFAF8" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROOF STRIP ================= -->
+<section class="proof" aria-label="Highlights">
+  <div class="wrap">
+    <div class="proof-item"><b>Preprint</b><span>Published on SSRN, September 2026</span></div>
+    <div class="proof-item"><b>ML Intern</b><span>FlyRank AI. Completed, with a deployed capstone</span></div>
+    <div class="proof-item"><b>2 × IBM</b><span>Hackathon builds: Drift Watch and SkyGuard PK</span></div>
+    <div class="proof-item"><b>4 apps</b><span>Built for Urdu and English speakers</span></div>
+  </div>
+</section>
+
+<!-- ================= WORK ================= -->
+<section class="section" id="work">
+  <div class="wrap">
+    <p class="kicker">Selected work</p>
+    <h2>Every result comes with its limits.</h2>
+    <p class="sub">Each project shows what I measured, how confident I am in it, and what it does not prove.</p>
+    <div class="legend" aria-label="Evidence tags">
+      <span><span class="tag tag-observed">Observed</span>measured directly, on data I can name</span>
+      <span><span class="tag tag-directional">Directional</span>points a way, evidence is thin or unstable</span>
+      <span><span class="tag tag-not">Not claimed</span>what I refuse to say the work proves</span>
+    </div>
+
+    <!-- Case 1: chest x-ray -->
+    <article class="case reveal">
+      <div class="case-txt">
+        <div class="chips"><span class="tag tag-observed">Observed</span><span class="stack" style="margin:0">Research · Deep learning · TensorFlow</span></div>
+        <h3>Accuracy is not enough: chest X-ray pneumonia detection</h3>
+        <p>Three CNNs compared on the real RSNA Pneumonia Detection dataset (26,684 X-rays). The deeper model had the higher accuracy, and still missed most pneumonia cases. Which model "wins" depends on which metric you rank by.</p>
+        <div class="metrics">
+          <div class="metric"><b>0.838</b><span>AUC, MobileNetV2 transfer learning</span></div>
+          <div class="metric"><b>0.85</b><span>pneumonia recall, MobileNetV2</span></div>
+          <div class="metric"><b>0.39</b><span>pneumonia recall of the higher-accuracy Deep CNN</span></div>
         </div>
-
-        <!-- ============ 3. ABOUT ============ -->
-        <div id="about" class="pb-20">
-            <h2 class="text-xs font-mono uppercase tracking-wider text-[#1A1A1A]/70 mb-6">About</h2>
-            <div class="space-y-4 max-w-2xl">
-                <p class="text-[#1A1A1A]/80 text-lg leading-relaxed">
-                    I'm an AI/ML undergraduate at Dawood University of Engineering & Technology, Karachi — but the
-                    short version is: I don't trust a model until it's been tested outside a notebook, by a real
-                    person, on a real problem.
-                </p>
-                <p class="text-[#1A1A1A]/60 leading-relaxed">
-                    KarachiWatts started because someone was fed up with unpredictable power cuts, not because it
-                    made a good class project. That's the pattern I want every future build to follow — a real
-                    person, a real problem, an honest accuracy number, even when that number isn't perfect yet.
-                </p>
-                <p class="text-[#1A1A1A]/60 leading-relaxed">
-                    This page isn't about one project. It's proof of a way of working — future entries here may be
-                    in a completely different domain, and that's by design.
-                </p>
-            </div>
+        <p class="claim"><strong>Not claimed:</strong> clinical usefulness. This is a model comparison, not a diagnostic tool.</p>
+        <div class="links">
+          <a class="btn btn-primary btn-sm" href="https://papers.ssrn.com/abstract=7453339" target="_blank" rel="noopener">Read the preprint</a>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/maryamsohail32/ChestXRay-CNN-Temporal-Analysis" target="_blank" rel="noopener">Code on GitHub</a>
         </div>
+      </div>
+      <div class="viz">
+        <p class="viz-title">Two rankings, opposite winners</p>
+        <div class="barlabel">Accuracy</div>
+        <div class="barrow"><span>Deep CNN</span><div class="track"><i class="b-a" style="--w:79.1%"></i></div><em>79.1%</em></div>
+        <div class="barrow"><span>MobileNetV2</span><div class="track"><i class="b-b" style="--w:70%"></i></div><em>70.0%</em></div>
+        <div class="barlabel">Pneumonia recall</div>
+        <div class="barrow"><span>Deep CNN</span><div class="track"><i class="b-a" style="--w:39%"></i></div><em>39%</em></div>
+        <div class="barrow"><span>MobileNetV2</span><div class="track"><i class="b-b" style="--w:85%"></i></div><em>85%</em></div>
+        <p class="viz-note">Third model, a simple CNN: accuracy 0.682, AUC 0.805. Trained and evaluated on the RSNA Pneumonia Detection Challenge data.</p>
+      </div>
+    </article>
 
-        <!-- ============ 4. CONTACT ============ -->
-        <div id="contact" class="pb-24">
-            <div class="bg-[#1B3A5C] rounded-2xl px-8 py-12 space-y-6">
-                <div class="text-center space-y-2">
-                    <h2 class="text-2xl font-bold text-white">Have a real problem like this?</h2>
-                    <p class="text-white/70 max-w-md mx-auto">Send me a message and I'll get back to you directly — or book a call if you'd rather talk it through.</p>
-                </div>
-
-                <!-- Real working contact form, wired to Formspree via AJAX (stays on-page, no redirect) -->
-                <div data-fs-success class="hidden max-w-md mx-auto bg-white/10 border border-white/20 text-white text-sm rounded-lg px-4 py-3 text-center"></div>
-
-                <form id="contact-form" action="https://formspree.io/f/xykroeve" method="POST" class="max-w-md mx-auto space-y-3">
-                    <div>
-                        <input type="text" name="name" data-fs-field required placeholder="Your name"
-                            class="w-full px-4 py-2.5 rounded-lg bg-white/95 text-[#1A1A1A] placeholder-[#1A1A1A]/40 text-sm focus:outline-none focus:ring-2 focus:ring-[#E8A33D]">
-                        <span data-fs-error="name" class="text-[#E8A33D] text-xs mt-1 block"></span>
-                    </div>
-                    <div>
-                        <input type="email" name="email" data-fs-field required placeholder="Your email"
-                            class="w-full px-4 py-2.5 rounded-lg bg-white/95 text-[#1A1A1A] placeholder-[#1A1A1A]/40 text-sm focus:outline-none focus:ring-2 focus:ring-[#E8A33D]">
-                        <span data-fs-error="email" class="text-[#E8A33D] text-xs mt-1 block"></span>
-                    </div>
-                    <div>
-                        <textarea name="message" data-fs-field required placeholder="What are you looking to build?" rows="4"
-                            class="w-full px-4 py-2.5 rounded-lg bg-white/95 text-[#1A1A1A] placeholder-[#1A1A1A]/40 text-sm focus:outline-none focus:ring-2 focus:ring-[#E8A33D] resize-none"></textarea>
-                        <span data-fs-error="message" class="text-[#E8A33D] text-xs mt-1 block"></span>
-                    </div>
-                    <span data-fs-error class="text-[#E8A33D] text-xs block text-center"></span>
-                    <button type="submit" data-fs-submit-btn
-                        class="w-full px-6 py-3 bg-[#E8A33D] hover:bg-[#E8A33D]/90 disabled:opacity-50 text-[#1B3A5C] font-semibold text-sm rounded-lg transition">
-                        Send Message
-                    </button>
-                </form>
-
-                <script>
-                    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-                    formspree('initForm', { formElement: '#contact-form', formId: 'xykroeve' });
-                </script>
-                <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
-
-                <div class="text-center">
-                    <a href="mailto:maryam786sohail@gmail.com" class="text-white/60 text-sm hover:text-white hover:underline transition">
-                        or book a call directly →
-                    </a>
-                </div>
-
-                <div class="flex justify-center gap-6 pt-2 text-sm text-white/70">
-                    <a href="https://www.linkedin.com/in/maryam-sohail-ahmed-685524341" target="_blank" rel="noopener" class="hover:text-white hover:underline transition">LinkedIn</a>
-                    <a href="https://github.com/maryamsohail32" target="_blank" rel="noopener" class="hover:text-white hover:underline transition">GitHub</a>
-                    <a href="assets/Maryam-Sohail-CV.pdf" target="_blank" rel="noopener" class="hover:text-white hover:underline transition">Download CV</a>
-                </div>
-            </div>
+    <!-- Case 2: FlyRank capstone -->
+    <article class="case reveal">
+      <div class="case-txt">
+        <div class="chips"><span class="tag tag-directional">Directional</span><span class="stack" style="margin:0">FlyRank AI internship capstone · scikit-learn</span></div>
+        <h3>Content opportunity scoring</h3>
+        <p>An end-to-end ML pipeline that ranks which content to refresh, taken from problem framing to a deployed research write-up. I found and fixed a labelling flaw mid-project, and reported that both models fell below the base rate on the May holdout.</p>
+        <div class="metrics">
+          <div class="metric"><b>0.76</b><span>Precision@50, Random Forest</span></div>
+          <div class="metric"><b>Flipped</b><span>Random Forest overtook an earlier Logistic Regression lead</span></div>
+          <div class="metric"><b>Below</b><span>both models under the base rate on the May holdout</span></div>
         </div>
+        <p class="claim"><strong>Not claimed:</strong> production-ready ranking, or stability over time. The May result points to data drift.</p>
+        <div class="links">
+          <a class="btn btn-primary btn-sm" href="https://maryamsohail32.github.io/flyrank-ml-internship/" target="_blank" rel="noopener">Read the write-up</a>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/maryamsohail32/flyrank-ml-internship" target="_blank" rel="noopener">Code on GitHub</a>
+        </div>
+      </div>
+      <div class="viz ladder">
+        <p class="viz-title">How I label evidence</p>
+        <ol>
+          <li><span class="tag tag-observed">Observed</span><span>Measured directly, on data I can name.</span></li>
+          <li class="on"><span class="tag tag-directional">Directional</span><span>Points a way, but the evidence is thin or unstable. <b>This project.</b></span></li>
+          <li><span class="tag tag-decision">Decision-support</span><span>Useful for a human making a call, not for automating it.</span></li>
+          <li><span class="tag tag-not">Not claimed</span><span>What I deliberately refuse to say the work proves.</span></li>
+        </ol>
+      </div>
+    </article>
 
-    </main>
-<footer class="max-w-4xl mx-auto px-6 pb-10 text-center text-xs text-[#1A1A1A]/60 space-y-2">
-    <p>© 2026 Maryam Sohail Ahmed</p>
-    <!-- FlyRank Graduate Badge slot — pending capstone approval, not yet issued.
-         Replace this line with FlyRank's real badge image + link once received:
-         <a href="[FLYRANK_VERIFICATION_URL]"><img src="[BADGE_IMAGE]" alt="FlyRank Graduate Badge" class="h-8 mx-auto"></a> -->
-    <p class="text-[#1A1A1A]/40 italic">FlyRank Graduate Badge — pending capstone approval</p>
+    <!-- Case 3: KarachiWatts -->
+    <article class="case reveal">
+      <div class="case-txt">
+        <div class="chips"><span class="tag tag-observed">Observed · synthetic data</span><span class="stack" style="margin:0">Random Forest · Streamlit · Groq</span></div>
+        <h3>KarachiWatts: load-shedding predictor</h3>
+        <p>A Random Forest model that predicts outage duration across 15 Karachi neighborhoods, wrapped in a bilingual chatbot (Groq, LLaMA 3.3 70B) that answers in plain language and quotes the model's prediction instead of inventing its own number.</p>
+        <div class="metrics">
+          <div class="metric"><b>0.991</b><span>R² on held-out data</span></div>
+          <div class="metric"><b>0.26 h</b><span>mean absolute error</span></div>
+          <div class="metric"><b>16,440</b><span>records, 15 neighborhoods</span></div>
+        </div>
+        <p class="claim"><strong>Not claimed:</strong> real-world forecast accuracy. The data is synthetic, so these numbers show the pipeline works, not that it predicts real outages.</p>
+        <div class="links">
+          <a class="btn btn-primary btn-sm" href="https://karachiwatts-msa.streamlit.app" target="_blank" rel="noopener">Open the live app</a>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/maryamsohail32/KarachiWatts" target="_blank" rel="noopener">Code on GitHub</a>
+        </div>
+      </div>
+      <div class="shots">
+        <figure class="frame">
+          <div class="frame-bar"><i></i><i></i><i></i><span>karachiwatts-msa.streamlit.app</span></div>
+          <img src="assets/karachiWatts_analytics.jpeg" alt="KarachiWatts analytics dashboard" loading="lazy" decoding="async">
+        </figure>
+        <figure class="frame">
+          <div class="frame-bar"><i></i><i></i><i></i><span>karachiwatts-msa.streamlit.app</span></div>
+          <img src="assets/karachiWatts_chatbot.jpeg" alt="KarachiWatts bilingual chatbot answering an outage question" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </article>
+
+    <h3 class="more-title">More projects</h3>
+    <div class="grid2">
+      <div class="card has-thumb reveal">
+        <a class="thumb" href="https://github.com/maryamsohail32/drift-watch" target="_blank" rel="noopener"><img src="assets/drift-watch.jpg" alt="Drift Watch dashboard flagging two silent failures in a demo pipeline" loading="lazy" decoding="async"></a>
+        <div class="body">
+          <h4>Drift Watch</h4>
+          <p>Hackathon prototype that audits an ML pipeline for silent failures, such as out-of-range inputs and target leakage, that return HTTP 200 and never raise an error, then drafts remediation patches. Built solo for the IBM TechXchange 2026 Hackathon.</p>
+          <div class="stack">Python · Streamlit · IBM Bob</div>
+          <div class="links"><a class="btn btn-ghost btn-sm" href="https://github.com/maryamsohail32/drift-watch" target="_blank" rel="noopener">Code</a></div>
+        </div>
+      </div>
+      <div class="card has-thumb reveal">
+        <a class="thumb contain" href="https://github.com/maryamsohail32/skyguard-pk" target="_blank" rel="noopener"><img src="assets/skyguard-pk.jpg" alt="SkyGuard PK: NASA satellite data turned into plain-language flood and heatwave risk alerts for Pakistan" loading="lazy" decoding="async"></a>
+        <div class="body">
+          <h4>SkyGuard PK</h4>
+          <p>Flood and heatwave risk alerts for Pakistani cities in Urdu and English, built on NASA POWER satellite data and a Random Forest classifier, with adjustable alert thresholds. IBM AI Builders Challenge, August 2026.</p>
+          <div class="stack">Python · scikit-learn · NASA POWER · Streamlit</div>
+          <div class="links"><a class="btn btn-ghost btn-sm" href="https://github.com/maryamsohail32/skyguard-pk" target="_blank" rel="noopener">Code</a></div>
+        </div>
+      </div>
+      <div class="card has-thumb reveal">
+        <a class="thumb contain" href="https://github.com/maryamsohail32/AlBayan" target="_blank" rel="noopener"><img src="assets/albayan-chat.jpg" alt="Al-Bayan tafseer chat with suggested questions in English and Urdu" loading="lazy" decoding="async"></a>
+        <div class="body">
+          <h4>Al-Bayan</h4>
+          <p>Quranic study app with streaming AI chat grounded in classical tafseer sources (Ibn Kathir, Ma'ariful Quran), a verse browser, thematic discovery and bookmarks across all 114 surahs and 6,236 verses.</p>
+          <div class="stack">React · Flask · SQLite</div>
+          <div class="links"><a class="btn btn-ghost btn-sm" href="https://github.com/maryamsohail32/AlBayan" target="_blank" rel="noopener">Code</a></div>
+        </div>
+      </div>
+      <div class="card has-thumb reveal">
+        <a class="thumb" href="https://msa-sentiment-analyzers.streamlit.app/" target="_blank" rel="noopener"><img src="assets/sentiment-analyzer.jpg" alt="Sentiment Analyzer app with single text and batch analysis tabs" loading="lazy" decoding="async"></a>
+        <div class="body">
+          <h4>Sentiment Analyzer</h4>
+          <p>Sentiment app built on the pretrained DistilBERT SST-2 checkpoint from Hugging Face, adding a confidence threshold for three-class output, batch analysis, history and a pytest suite.</p>
+          <div class="stack">PyTorch · Hugging Face · Streamlit · pytest</div>
+          <div class="links">
+            <a class="btn btn-ghost btn-sm" href="https://github.com/maryamsohail32/sentiment-analyzer" target="_blank" rel="noopener">Code</a>
+            <a class="btn btn-ghost btn-sm" href="https://msa-sentiment-analyzers.streamlit.app/" target="_blank" rel="noopener">Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="card reveal">
+        <h4>Samajh AI</h4>
+        <p>Bilingual AI-literacy tutor for underserved Pakistani students, with serverless API routes and per-student state.</p>
+        <div class="stack">React · Vite · Tailwind · Vercel</div>
+        <div class="links"><a class="btn btn-ghost btn-sm" href="https://github.com/maryamsohail32/samajh-ai" target="_blank" rel="noopener">Code</a></div>
+      </div>
+      <div class="card reveal">
+        <h4>Pakistan Socioeconomic Dashboard</h4>
+        <p>Interactive dashboard of Pakistan's socioeconomic indicators for 2019 to 2024, with year-range and multi-city filters.</p>
+        <div class="stack">Streamlit · pandas · Matplotlib</div>
+        <div class="links"><a class="btn btn-ghost btn-sm" href="https://github.com/maryamsohail32/pakistan-socioeconomic-dashboard" target="_blank" rel="noopener">Code</a></div>
+      </div>
+    </div>
+    <p class="note">More on <a href="https://github.com/maryamsohail32" target="_blank" rel="noopener" style="text-decoration:underline">GitHub</a>.</p>
+  </div>
+</section>
+
+<!-- ================= HOW I WORK ================= -->
+<section class="section band" id="how">
+  <div class="wrap">
+    <p class="kicker">How I work</p>
+    <h2>I try to break my own results before anyone else does.</h2>
+    <div class="two">
+      <div class="paper reveal">
+        <p class="kicker">Research · SSRN preprint · September 2026</p>
+        <h3>Accuracy is not Enough: Why Two "Good" Models Disagree on Which One is Best</h3>
+        <p>Which model wins depends on whether you rank by accuracy or by the recall of the class that matters. In pneumonia screening, those two rankings point in opposite directions.</p>
+        <a class="btn btn-amber btn-sm" href="https://papers.ssrn.com/abstract=7453339" target="_blank" rel="noopener">Read on SSRN</a>
+      </div>
+      <div class="mistakes">
+        <div class="mistake reveal"><h4>An impossible metric</h4><p>My first chest X-ray model scored AUC 1.0 on synthetic data. I noticed the result was internally inconsistent and retrained on real data.</p></div>
+        <div class="mistake reveal"><h4>A label flaw</h4><p>I found a labelling error in my FlyRank pipeline mid-project, corrected it, and re-ran the evaluation.</p></div>
+        <div class="mistake reveal"><h4>A ranking that flipped</h4><p>Logistic Regression led early. Random Forest won under proper evaluation, and I reported the reversal.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <p class="kicker">Experience &amp; education</p>
+    <h2>Where I've learned and built.</h2>
+    <div class="cols">
+      <div>
+        <p class="col-title">Experience &amp; competitions</p>
+        <div class="tl">
+          <h4>Machine Learning Intern, FlyRank AI</h4>
+          <p class="meta">Completed · certificate of completion issued September 2026</p>
+          <ul>
+            <li>Completed the ML track from problem framing through a deployed capstone.</li>
+            <li>Built a content opportunity scoring pipeline and published a research write-up with explicit limitations.</li>
+          </ul>
+        </div>
+        <div class="tl">
+          <h4>Deloitte Data Analytics Job Simulation</h4>
+          <p class="meta">Forage · June 2026</p>
+          <p>Analysed factory telemetry in Tableau to find the highest-downtime site and root-cause device type, and classified gender pay equality across job roles in Excel.</p>
+        </div>
+        <div class="tl">
+          <h4>Hackathons and challenges</h4>
+          <ul>
+            <li>IBM TechXchange Dev Day Hackathon: built Drift Watch solo.</li>
+            <li>IBM AI Builders Challenge: published SkyGuard PK.</li>
+            <li>LangChain Mysteries, PROCOM'26 (FAST NUCES): speech-to-text, document forensics and AI reasoning in a team of four.</li>
+            <li>Top 5 scorer, Skkillo × Sync Backend and AI Engineering Intern Challenge.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <p class="col-title">Education &amp; certificates</p>
+        <div class="tl">
+          <h4>BS Artificial Intelligence</h4>
+          <p class="meta">Dawood University of Engineering &amp; Technology, Karachi · 2024 to present</p>
+          <p>CGPA 3.7</p>
+        </div>
+        <div class="tl">
+          <h4>Intermediate, Pre-Engineering</h4>
+          <p class="meta">Liaquat Govt. Girls College, Karachi · 2023</p>
+        </div>
+        <div class="tl">
+          <h4>Certificates</h4>
+          <ul>
+            <li>~20 Anthropic Academy certificates, including Building with the Claude API, Model Context Protocol, Agent Skills and Subagents.</li>
+            <li>IBM, Introduction to Artificial Intelligence (98%).</li>
+            <li>Microsoft 365 Copilot Masterclass, March 2026.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section band" id="skills">
+  <div class="wrap">
+    <p class="kicker">Skills</p>
+    <h2>Tools I have shipped with.</h2>
+    <div class="skills reveal">
+      <div class="skill-row"><h4>ML and data</h4><div class="pills"><span>Python</span><span>scikit-learn</span><span>TensorFlow</span><span>Keras</span><span>PyTorch</span><span>Hugging Face</span><span>pandas</span><span>NumPy</span><span>Matplotlib</span></div></div>
+      <div class="skill-row"><h4>LLM applications</h4><div class="pills"><span>Groq (LLaMA 3.3)</span><span>Claude API</span><span>Model Context Protocol</span><span>LangChain</span></div></div>
+      <div class="skill-row"><h4>Apps and APIs</h4><div class="pills"><span>Streamlit</span><span>Flask</span><span>React</span><span>Vite</span><span>Tailwind</span><span>Laravel</span><span>Supabase</span><span>Vercel</span></div></div>
+      <div class="skill-row"><h4>Practice</h4><div class="pills"><span>Evaluation and error analysis</span><span>Reproducible write-ups</span><span>Git</span><span>SQL</span><span>pytest</span></div></div>
+    </div>
+    <p class="note">Coursework: C++, Java, data structures and algorithms, databases, neural networks, linear algebra and calculus.</p>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <p class="kicker">Contact</p>
+        <h2>Hiring for an ML / AI internship, or have a problem worth modeling?</h2>
+        <p>Send a message and I will reply by email. I am based in Karachi and available for remote work.</p>
+        <ul class="contact-list">
+          <li><small>Email</small><a href="mailto:maryam786sohail@gmail.com">maryam786sohail@gmail.com</a></li>
+          <li><small>LinkedIn</small><a href="https://www.linkedin.com/in/maryam-sohail-ahmed-685524341" target="_blank" rel="noopener">maryam-sohail-ahmed</a></li>
+          <li><small>GitHub</small><a href="https://github.com/maryamsohail32" target="_blank" rel="noopener">maryamsohail32</a></li>
+          <li><small>CV</small><a href="assets/Maryam-Sohail-CV.pdf" target="_blank" rel="noopener">Download PDF</a></li>
+        </ul>
+      </div>
+      <form id="contact-form" action="https://formspree.io/f/xykroeve" method="POST">
+        <div><label for="name">Your name</label><input id="name" type="text" name="name" required autocomplete="name"></div>
+        <div><label for="email">Your email</label><input id="email" type="email" name="email" required autocomplete="email"></div>
+        <div><label for="message">Message</label><textarea id="message" name="message" required placeholder="What are you hiring for, or what are you trying to build?"></textarea></div>
+        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-amber" type="submit">Send message</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Maryam Sohail Ahmed · Karachi, Pakistan</span>
+    <span><a href="https://github.com/maryamsohail32" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/maryam-sohail-ahmed-685524341" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://papers.ssrn.com/abstract=7453339" target="_blank" rel="noopener">SSRN</a></span>
+  </div>
 </footer>
 
+<script>
+(function () {
+  /* reveal on scroll */
+  var els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    els.forEach(function (el) { io.observe(el); });
+  } else {
+    els.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* contact form: real Formspree submit, stays on the page */
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('form-status');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true; btn.textContent = 'Sending...';
+    status.className = 'form-status'; status.textContent = '';
+    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+      .then(function (r) {
+        if (!r.ok) { throw new Error('send failed'); }
+        form.reset();
+        status.className = 'form-status ok';
+        status.textContent = 'Thanks, your message was sent. I will reply by email.';
+      })
+      .catch(function () {
+        status.className = 'form-status err';
+        status.textContent = 'Could not send. Please email me directly at maryam786sohail@gmail.com.';
+      })
+      .then(function () { btn.disabled = false; btn.textContent = 'Send message'; });
+  });
+})();
+</script>
 </body>
 </html>
