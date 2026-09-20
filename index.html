@@ -407,8 +407,8 @@ footer a:hover{color:var(--navy)}
         <p>Three CNNs compared on the real RSNA Pneumonia Detection dataset (26,684 X-rays). The deeper model had the higher accuracy, and still missed most pneumonia cases. Which model "wins" depends on which metric you rank by.</p>
         <div class="metrics">
           <div class="metric"><b>0.838</b><span>AUC, MobileNetV2 transfer learning</span></div>
-          <div class="metric"><b>0.85</b><span>pneumonia recall, MobileNetV2</span></div>
-          <div class="metric"><b>0.39</b><span>pneumonia recall of the higher-accuracy Deep CNN</span></div>
+          <div class="metric"><b>85%</b><span>pneumonia recall, MobileNetV2</span></div>
+          <div class="metric"><b>39%</b><span>pneumonia recall of the higher-accuracy Deep CNN</span></div>
         </div>
         <p class="claim"><strong>Not claimed:</strong> clinical usefulness. This is a model comparison, not a diagnostic tool.</p>
         <div class="links">
@@ -463,11 +463,11 @@ footer a:hover{color:var(--navy)}
         <h3>KarachiWatts: load-shedding predictor</h3>
         <p>A Random Forest model that predicts outage duration across 15 Karachi neighborhoods, wrapped in a bilingual chatbot (Groq, LLaMA 3.3 70B) that answers in plain language and quotes the model's prediction instead of inventing its own number.</p>
         <div class="metrics">
-          <div class="metric"><b>0.991</b><span>R² on held-out data</span></div>
-          <div class="metric"><b>0.26 h</b><span>mean absolute error</span></div>
-          <div class="metric"><b>16,440</b><span>records, 15 neighborhoods</span></div>
+          <div class="metric"><b>3</b><span>regression models compared</span></div>
+          <div class="metric"><b>15</b><span>Karachi neighborhoods</span></div>
+          <div class="metric"><b>16,440</b><span>synthetic records</span></div>
         </div>
-        <p class="claim"><strong>Not claimed:</strong> real-world forecast accuracy. The data is synthetic, so these numbers show the pipeline works, not that it predicts real outages.</p>
+        <p class="claim"><strong>Not claimed:</strong> real-world forecast accuracy. Random Forest scored best on the synthetic data (R² 0.991, MAE 0.26 h), which shows the pipeline works, not that it predicts real outages.</p>
         <div class="links">
           <a class="btn btn-primary btn-sm" href="https://karachiwatts-msa.streamlit.app" target="_blank" rel="noopener">Open the live app</a>
           <a class="btn btn-ghost btn-sm" href="https://github.com/maryamsohail32/KarachiWatts" target="_blank" rel="noopener">Code on GitHub</a>
@@ -593,7 +593,7 @@ footer a:hover{color:var(--navy)}
             <li>IBM TechXchange Dev Day Hackathon: built Drift Watch solo.</li>
             <li>IBM AI Builders Challenge: published SkyGuard PK.</li>
             <li>LangChain Mysteries, PROCOM'26 (FAST NUCES): speech-to-text, document forensics and AI reasoning in a team of four.</li>
-            <li>Top 5 scorer, Skkillo × Sync Backend and AI Engineering Intern Challenge.</li>
+            <li>Top scorer, Skkillo × Sync Backend and AI Engineering Intern Challenge.</li>
           </ul>
         </div>
       </div>
@@ -602,7 +602,7 @@ footer a:hover{color:var(--navy)}
         <div class="tl">
           <h4>BS Artificial Intelligence</h4>
           <p class="meta">Dawood University of Engineering &amp; Technology, Karachi · 2024 to present</p>
-          <p>CGPA 3.7</p>
+          <p>CGPA 3.69</p>
         </div>
         <div class="tl">
           <h4>Intermediate, Pre-Engineering</h4>
